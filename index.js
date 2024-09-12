@@ -31,3 +31,19 @@ const quotes = {
 
     ]
 };
+let currentCategory = "science";
+let currentQuoteIndex = 0;
+
+const quoteText = document.getElementById('quoteText');
+const categorySelect = document.getElementById('category');
+const previousBtn = document.getElementById('previousBtn');
+const nextBtn = document.getElementById('nextBtn');
+const randomBtn = document.getElementById('randomBtn');
+
+
+const loadQuote = () => {
+    quoteText.textContent = `"${quotes[currentCategory][currentQuoteIndex]}"`;
+};
+
+loadQuote();
+
