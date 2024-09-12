@@ -45,5 +45,24 @@ const loadQuote = () => {
     quoteText.textContent = `"${quotes[currentCategory][currentQuoteIndex]}"`;
 };
 
+previousBtn.addEventListener('click', () => {
+    if (currentQuoteIndex > 0) {
+        currentQuoteIndex--;
+        loadQuote();
+    }
+});
+
+nextBtn.addEventListener('click', () => {
+    if (currentQuoteIndex < quotes[currentCategory].length - 1) {
+        currentQuoteIndex++;
+        loadQuote();
+    }
+});
+
+randomBtn.addEventListener('click', () => {
+    currentQuoteIndex = Math.floor(Math.random() * quotes[currentCategory].length);
+    loadQuote();
+});
+
 loadQuote();
 
