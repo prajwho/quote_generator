@@ -82,5 +82,9 @@ decreaseFontBtn.addEventListener('click', () => {
     }
 });
 
+modeSwitch.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode');
+});
+
 loadQuote();
 
