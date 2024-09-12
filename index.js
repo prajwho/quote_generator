@@ -70,5 +70,17 @@ randomBtn.addEventListener('click', () => {
     loadQuote();
 });
 
+increaseFontBtn.addEventListener('click', () => {
+    const currentFontSize = parseFloat(window.getComputedStyle(quoteText).fontSize);
+    quoteText.style.fontSize = `${currentFontSize + 2}px`;
+});
+
+decreaseFontBtn.addEventListener('click', () => {
+    const currentFontSize = parseFloat(window.getComputedStyle(quoteText).fontSize);
+    if (currentFontSize > 12) {
+        quoteText.style.fontSize = `${currentFontSize - 2}px`;
+    }
+});
+
 loadQuote();
 
