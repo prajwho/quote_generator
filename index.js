@@ -45,6 +45,12 @@ const loadQuote = () => {
     quoteText.textContent = `"${quotes[currentCategory][currentQuoteIndex]}"`;
 };
 
+categorySelect.addEventListener('change', (e) => {
+    currentCategory = e.target.value;
+    currentQuoteIndex = 0;
+    loadQuote();
+});
+
 previousBtn.addEventListener('click', () => {
     if (currentQuoteIndex > 0) {
         currentQuoteIndex--;
