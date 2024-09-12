@@ -58,3 +58,49 @@ input[type="checkbox"] {
     height: 1.1rem;
     width: 1.1rem;
 }
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .quote-box {
+    background-color: #555;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .quote-box {
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    .controls button {
+        padding: 10px;
+        font-size: 0.9rem;
+        margin: 5px;
+        width: 100%;
+    }
+
+    .font-size-controls button {
+        padding: 8px;
+        font-size: 0.9rem;
+        margin: 3px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #quoteText {
+        font-size: 1.1rem;
+    }
+}
