@@ -39,7 +39,9 @@ const categorySelect = document.getElementById('category');
 const previousBtn = document.getElementById('previousBtn');
 const nextBtn = document.getElementById('nextBtn');
 const randomBtn = document.getElementById('randomBtn');
-
+const increaseFontBtn = document.getElementById('increaseFont');
+const decreaseFontBtn = document.getElementById('decreaseFont');
+const modeSwitch = document.getElementById('modeSwitch');
 
 const loadQuote = () => {
     quoteText.textContent = `"${quotes[currentCategory][currentQuoteIndex]}"`;
